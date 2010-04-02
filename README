@@ -1,6 +1,26 @@
 Further updates to this package should be available from CPAN:
 http://search.cpan.org/AUTHOR/A/ALEX/TDMA/
 
+#
+# This module is not intended to require 64-bit support
+# but the objects it creates can rapidly exhaust your
+# given slice. This means you may run out of ram and your
+# test may fail, despite the API still working. Right now,
+# there is a hack in place to prevent failure during
+# automated testing.
+#
+# Nothing other than my own bugs should prevent you from
+# using this code the way it is, if you want to build
+# partial epochs or see how the TDMA stack is composed
+# (I had to reverse-engineer a stack of *printed* powerpoint
+# documents!). So, this is pre-release software, and thar
+# be dragons. I'm fixing it, but it will be slow unless
+# somebody would like to either help or get this more complete.
+# Right now it needs a lot more tests.
+#
+# Alex J. Avriette, April Fools' Day, 2010.
+#
+
 The purpose of this project at the moment is to teach more than to be
 used for communications. On the computer I initially began development
 on (A 2ghz Macbook), it was nowhere near fast enough to actually work on

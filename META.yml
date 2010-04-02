@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                Net-TDMA
-version:             0.1pre
+version:             0.2
 abstract:            Teaching Implementation of TDMA networking protocol
 license:             ~
 author:              
